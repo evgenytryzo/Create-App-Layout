@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Header from "@/pages/components/Header";
-import Footer from "@/pages/components/Footer";
+import Header from "@/pages/components/Header/Header";
+import Footer from "@/pages/components/Footer/Footer";
 
-export function MainLayout({children}) {
+const MainLayout = ({children}) => {
     return (<>
 
         <Head>
@@ -12,7 +12,7 @@ export function MainLayout({children}) {
             <title>App Next.js</title>
 
             <meta name="description" content="Next project"></meta>
-            <meta name="keywords" content="html, css, javascript< Next, NextJS  "></meta>
+            <meta name="keywords" content="html, css, javascript< Next, NextJS"></meta>
             <meta name="author" content="Evgeny Tryzo"></meta>
         </Head>
 
@@ -22,7 +22,8 @@ export function MainLayout({children}) {
             {children}
         </main>
 
-        <Footer />
+        <Footer/>
 
     </>)
 }
+export {MainLayout}
