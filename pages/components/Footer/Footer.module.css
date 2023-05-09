@@ -3,3 +3,9 @@
     background-color: lightgray;
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+        background-color: gray;
+    }
+}

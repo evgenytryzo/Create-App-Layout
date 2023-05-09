@@ -3,3 +3,9 @@
     margin: 0;
     background-color: lightgray;
 }
+
+@media screen and (max-width: 768px) {
+    .header {
+        background-color: gray;
+    }
+}
