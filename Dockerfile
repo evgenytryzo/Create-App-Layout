@@ -5,6 +5,6 @@ WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn install
 
-COPY ../my-project ./app
+COPY . ./app
 
 CMD ["yarn", "dev"]

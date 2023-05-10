@@ -1,14 +1,10 @@
-import {MainLayout} from "@/pages/components/MainLayout/MainLayout.js"
-import Main from "@/pages/components/Main/Main";
+import MainLayout from "@/pages/components/MainLayout/MainLayout.js"
+import Main from "@/pages/components/Main/Main"
 
-const index = () => {
-    return (
-        <MainLayout>
+const Index = () => (
+  <MainLayout>
+    <Main/>
+  </MainLayout>
+)
 
-            <Main/>
-
-        </MainLayout>
-    )
-}
-
-export default index
+export default Index

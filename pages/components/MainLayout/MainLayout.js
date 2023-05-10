@@ -1,29 +1,31 @@
-import Head from "next/head";
-import Header from "@/pages/components/Header/Header";
-import Footer from "@/pages/components/Footer/Footer";
-import Main from "@/pages/components/Main/Main";
-const MainLayout = ({children}) => {
-    return (<>
+import Head from "next/head"
+import Header from "@/pages/components/Header/Header"
+import Footer from "@/pages/components/Footer/Footer"
+import Main from "@/pages/components/Main/Main"
 
-        <Head>
-            <meta charSet="UTF-8"></meta>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+const MainLayout = ({children}) => (
+  <>
+    <Head>
+      <meta charSet="UTF-8"></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
-            <title>App Next.js</title>
+      <title>App Next.js</title>
 
-            <meta name="description" content="Next project"></meta>
-            <meta name="keywords" content="html, css, javascript< Next, NextJS"></meta>
-            <meta name="author" content="Evgeny Tryzo"></meta>
-        </Head>
+      <meta name="description" content="Next project"></meta>
+      <meta name="keywords" content="html, css, javascript< Next, NextJS"></meta>
+      <meta name="author" content="Evgeny Tryzo"></meta>
 
-        <Header/>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    </Head>
 
-        <Main>
-            {children}
-        </Main>
+    <Header/>
+    <Main>
+      {children}
+    </Main>
+    <Footer/>
+  </>
+)
 
-        <Footer/>
-
-    </>)
-}
-export {MainLayout}
+export default MainLayout
