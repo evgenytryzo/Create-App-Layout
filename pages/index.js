@@ -1,5 +1,5 @@
-import MainLayout from "@/pages/components/MainLayout/MainLayout.js"
-import Main from "@/pages/components/Main/Main"
+import MainLayout from "../pages/components/MainLayout"
+import Main from "../pages/components/Main"
 
 const Index = () => (
   <MainLayout>

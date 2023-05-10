@@ -2,23 +2,16 @@ const MyApp = ({Component, pageProps}) => (
   <>
     <Component {...pageProps} />
     <style jsx global> {`
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
       #__next {
         display: flex;
         flex-direction: column;
-      }
-
-      body {
-        margin: 0;
-        padding: 0;
+        height: 100vh;
         min-width: 100px;
-      }
-
-      p {
-        margin: 0;
-      }
-
-      h1 {
-        margin: 0;
       }
 
       header {
@@ -27,11 +20,11 @@ const MyApp = ({Component, pageProps}) => (
       }
 
       main {
-        min-height: 200px;
+        flex-grow: 1;
       }
 
       footer {
-        min-height: 200px;
+        min-height: 300px;
         background-color: lightgray;
       }
 

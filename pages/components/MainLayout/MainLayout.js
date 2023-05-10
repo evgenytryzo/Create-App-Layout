@@ -1,7 +1,7 @@
 import Head from "next/head"
-import Header from "@/pages/components/Header/Header"
-import Footer from "@/pages/components/Footer/Footer"
-import Main from "@/pages/components/Main/Main"
+import Header from "../Header"
+import Main from "../Main"
+import Footer from "../Footer"
 
 const MainLayout = ({children}) => (
   <>
