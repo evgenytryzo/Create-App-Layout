@@ -1,4 +1,4 @@
-const MyApp = ({Component, pageProps}) => (
+const MyApp = ({ Component, pageProps }) => (
   <>
     <Component {...pageProps} />
     <style jsx global> {`

@@ -1,3 +1,1 @@
-import MainLayout from "@/pages/components/MainLayout/MainLayout"
-
-export default MainLayout
+export { default } from "./MainLayout"
