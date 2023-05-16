@@ -1,8 +1,8 @@
 version: '3.9'
 
 services:
-  app:
-    container_name: next-app-layout-container
+  next-app-layout:
+    container_name: next-app-layout_container
     tty: true
     volumes:
       - .:/app
@@ -10,8 +10,12 @@ services:
       sh -c "yarn install && yarn dev"
     build:
       context: .
-      tags:
-        - next-app--layout-image
+      dockerfile: next.Dockerfile
+    image: next-app-layout_image:2.0
     ports:
       - "4000:4000"
     restart: unless-stopped
+    deploy:
+      restart_policy:
+        condition: none
+    stdin_open: true
